@@ -6,12 +6,12 @@ $event = $_GET['e'];
 
 
 include('my_config.php');
-
+/*
 echo('User : '.$username.'<br>');
 echo('Password : '.$passeord.'<br>');
 echo('Language : '.$lang.'<br>');
 echo('Event : '.$event.'<br>');
-
+*/
 if($lang=='ar'){
 $erro_msg_ar="عفواً بياناتك غير صحيحة";
 $msg_ar="تم حذف الحدث";

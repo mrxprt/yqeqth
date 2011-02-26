@@ -105,6 +105,13 @@ background-color: #F6F4F2;
 	height:50px;
 	display:block;
 }
+
+#home ul li img.power{
+	width:100%;	
+	height:90px;
+	display:block;
+}
+
 #home ul li:last-child,
 #index ul li:last-child {
   border-bottom:none;

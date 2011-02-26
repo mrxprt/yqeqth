@@ -1,8 +1,8 @@
 ﻿<?php
 $host='localhost';
-$user='root';
-$pass='';
-$db='hadath';
+$user='mrxprt_hadath';
+$pass='xDM*7w0p{8ww';
+$db='mrxprt_hadath';
 
 
 $conn = mysql_connect($host,$user,$pass);
@@ -75,9 +75,9 @@ $events=$events.','.$e;
 
 $sql ="UPDATE users SET events = '".$events."' WHERE mail = '".$u."' ";
 $result = mysql_query($sql,$conn) or die (mysql_error());
-echo('Added');	
+//echo('Added');	
 }else{
-echo('exist');	
+//echo('exist');	
 }
 
 }
@@ -102,10 +102,10 @@ for($i=0;$i<count($eventsA);$i++){
 }
 $events='';
 $eventsA[$i]=' ';
-echo('$eventsA['.$i.'] : '.$eventsA[$i].'<br>');
+//echo('$eventsA['.$i.'] : '.$eventsA[$i].'<br>');
 
 for($i=0;$i<count($eventsA);$i++){
-		echo('$events : '.$events.'<br>');
+		//echo('$events : '.$events.'<br>');
 	 	if($eventsA[$i]!=' '){
 			$events=$events.','.$eventsA[$i];
 
@@ -116,7 +116,7 @@ for($i=0;$i<count($eventsA);$i++){
 
 $sql ="UPDATE users SET events = '".$events."' WHERE mail = '".$u."' ";
 $result = mysql_query($sql,$conn) or die (mysql_error());
-echo('deleted');	
+//echo('deleted');	
 } 
 
 
@@ -125,7 +125,7 @@ function ckeckExistance($sql,$conn,$u){
 	$result = mysql_query($sql,$conn) or die (mysql_error());
 	$row = mysql_fetch_array($result);
 	$numrows = mysql_num_rows($result );
-	echo('$numrows : '.$numrows.'<br>');
+	//echo('$numrows : '.$numrows.'<br>');
 	$Status;
 	$i=0;
 	for($i=0;$i<$numrows;$i++){
